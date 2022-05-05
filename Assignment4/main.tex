@@ -1,0 +1,62 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal, 12pt, twocolumn]{IEEEtran}
+\usepackage{mathtools}
+\usepackage{enumitem}
+\usepackage{enumerate}
+\usepackage{mathptmx}
+\usepackage{amssymb}
+\usepackage{textcomp}
+\usepackage{mathrsfs}
+\usepackage[euler]{textgreek}
+\let\vec\mathbf
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\pr}[1]{\ensuremath{\Pr\left(#1\right)}}
+
+
+\begin{document}
+\title{ASSIGNMENT 4}
+\author{Deepshikha(CS21BTECH11016)}
+\maketitle
+
+
+\begin{abstract}
+This document contains the solution for Assignment 4 (Class 11 Maths CBSE Ex 16.3.20).
+\end{abstract}
+
+\textbf{Ex 16.3.20:}
+The probability that a student will pass the final examination in both English and
+Hindi is 0.5 and the probability of passing neither is 0.1. If the probability of
+passing the English examination is 0.75, what is the probability of passing the
+Hindi examination?
+
+
+\textbf{Solution:}
+Let E and H denote the events that a student passes English and Hindi exams respectively.
+
+Given,
+\begin{align}
+    \pr{E \cap H}            &=0.5\\
+    \pr{E' \cap H'} &=0.1\\
+    \pr{E}                   &=0.75
+\end{align}
+From equation $(2)$,
+\begin{align}
+     \pr{E' \cap H'}&= 1-\pr{E \cup H}\\
+     \implies \pr{E \cup H} &=1-\pr{E' \cap H'}\\
+                            &=1-0.1\\
+                            &=0.9
+\end{align}
+From equation $(7)$,
+\begin{align}
+    \pr{E}+\pr{H}-\pr{E \cap H}&=0.9
+\end{align}
+Using equation $(1)$,$(3)$ in equation $(8)$,
+\begin{align}
+    0.75+\pr{H}-0.5&=0.9\\
+    \implies \pr{H}&=0.9+0.5-0.75\\
+                   &=0.65
+\end{align}
+
+\end{document}
